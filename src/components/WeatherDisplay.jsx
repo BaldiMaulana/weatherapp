@@ -3,7 +3,7 @@ import React from "react";
 const WeatherDisplay = ({ data, city }) =>{
   const currentDate = new Date();
 
-  if (data) {
+  if (data && data.main && data.main.temp) {
     // Konversi suhu dari Kelvin ke Celsius
     const temperatureInCelsius = (data.main.temp - 273.15).toFixed(2); // Mengambil 2 angka desimal
 
