@@ -1,0 +1,11 @@
+body{
+  font-family:'Poppins';
+}
+
+.glassmorphism {
+  background: linear-gradient(to bottom right, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.2));
+  backdrop-filter: blur(10px);
+  border: 0.1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 10px;
+  overflow: hidden;
+}
