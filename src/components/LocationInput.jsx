@@ -19,16 +19,18 @@ function LocationInput({ onLocationSearch }) {
 
 
   return (
-    <div className='flex'>
+    <div className='flex gap-1'>
+      <div className='flex gap-1'>
       <input
         type="text"
         placeholder="enter location"
         value={location}
         onChange={handleInputChange}
         onKeyPress={handleKeyInput}
-        className='text-2xl rounded-xl pl-4'
+        className='text-2xl rounded-xl text-start pl-4 w-[250px] sm:w-[300px]'
       />
-      <button onClick={() => onLocationSearch(location)} className='bg-blue-900 ml-1 text-2xl p-1 rounded-xl border-2 border-black'>🔎</button>
+      <button onClick={() => onLocationSearch(location)} className='bg-blue-900 text-2xl rounded-xl border-2 border-black'>🔎</button>
+      </div>
     </div>
   );
 }
