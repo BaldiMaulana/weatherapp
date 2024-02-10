@@ -19,7 +19,7 @@ function LocationInput({ onLocationSearch }) {
 
 
   return (
-    <div>
+    <div className='flex'>
       <input
         type="text"
         placeholder="enter location"
@@ -28,7 +28,7 @@ function LocationInput({ onLocationSearch }) {
         onKeyPress={handleKeyInput}
         className='text-2xl rounded-xl pl-4'
       />
-      <button onClick={() => onLocationSearch(location)} className='bg-blue-900 ml-2 text-2xl p-1 rounded-xl'>🔎</button>
+      <button onClick={() => onLocationSearch(location)} className='bg-blue-900 ml-1 text-2xl p-1 rounded-xl border-2 border-black'>🔎</button>
     </div>
   );
 }
