@@ -17,6 +17,10 @@ function LocationInput({ onLocationSearch }) {
       }
   };
 
+  const find = () =>{
+    onLocationSearch(location)
+  }
+
 
   return (
     <div className='flex gap-1'>
@@ -29,7 +33,7 @@ function LocationInput({ onLocationSearch }) {
         onKeyPress={handleKeyInput}
         className='text-2xl rounded-xl text-start pl-4 w-[250px] sm:w-[300px]'
       />
-      <button onClick={() => onLocationSearch(location)} className='bg-blue-900 text-2xl rounded-xl border-2 border-black'>🔎</button>
+      <button onClick={find} className='bg-blue-900 text-2xl rounded-xl border-2 border-black'>🔎</button>
       </div>
     </div>
   );
