@@ -24,15 +24,18 @@ const handleLocationSearch = (location) => {
 
 return (
   <div className="flex justify-center items-center h-screen bg-gray-950">
-  <main className=" backgroup-filter p-4 rounded-xl glassmorphism">
+  <main className=" backgroup-filter p-4 rounded-xl glassmorphism space-y-2">
     <h1 className="text-center text-3xl text-white">Weather Apps ☁</h1>
     <LocationInput onLocationSearch={handleLocationSearch} />
     <div className="text-white">
     {weatherData ? (
+
       <WeatherDisplay data={weatherData} city={city} />
+
     ) : (
       <p>Enter a location to see the weather.</p>
       )}
+
       <p className="text-end italic">Create by Bama</p>
     </div>
   </main>

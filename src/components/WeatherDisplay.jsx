@@ -11,8 +11,8 @@ const WeatherDisplay = ({ data, city }) =>{
 
 
     return (
-      <div className="flex justify-between">
-      <div>
+      <div className="flex justify-between gap-2 items-center">
+      <div className="mt-2">
         <h2>Weather in {city}</h2>
         <p>Temperature: {temperatureInCelsius} °C</p>
         <p>Humidity: {data.main.humidity}%</p>
